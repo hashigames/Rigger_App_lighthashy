@@ -1,0 +1,6 @@
+{
+  "name": "灯リグ - TouRigu Studio",
+  "description": "3D rigging studio specializing in custom biped, quadruped, and robot skeletons with neural joint alignment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom dark scrollbar matching Maya/Tou-Rigu dark panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111216;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b2e3e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #393d52;
+}
+
+/* Fluid UI smooth fades and animations */
+.animate-scan-pulse {
+  animation: scan-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes scan-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .4; }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-10%); }
+  50% { transform: translateY(500px); }
+  100% { transform: translateY(-10%); }
+}
+
+.animate-scanline {
+  animation: scanline 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
